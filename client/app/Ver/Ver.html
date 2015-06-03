@@ -1,0 +1,26 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<LINK REL=stylesheet HREF="estilo.css" TYPE="text/css">
+<header class="Titutlo">
+
+
+    <h1>Final Enfasis Paises </h1>
+</header>
+
+
+<div class="container">
+  Hover over me
+    <h1 class="page-header">Paises:</h1>
+    <div class="row" ng-repeat="info in informacion">
+      <a data-toggle="tooltip" title="Poblacion = {{info.population}}"><div class="col-md-4">Nombre : {{info.name}}</div>
+        <div class="col-md-4">capital : {{info.capital}}</div>
+          <div class="col-md-4">Continente : {{info.region}}</div></a>
+    </div>
+  </div>
+
+
+
+
+
+<footer class="footer">
+  <p>Final enfasis 3
+</footer>
